@@ -8,22 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		02400058221199EB0043418B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02400057221199EB0043418B /* AppDelegate.swift */; };
-		0240005A221199EB0043418B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02400059221199EB0043418B /* ViewController.swift */; };
-		0240005D221199EB0043418B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0240005B221199EB0043418B /* Main.storyboard */; };
+		0240005A221199EB0043418B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02400059221199EB0043418B /* DetailViewController.swift */; };
 		02400060221199EB0043418B /* Movies_Viper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0240005E221199EB0043418B /* Movies_Viper.xcdatamodeld */; };
 		02400062221199F30043418B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02400061221199F30043418B /* Assets.xcassets */; };
 		02400065221199F30043418B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02400063221199F30043418B /* LaunchScreen.storyboard */; };
+		0240007622119AC60043418B /* MovieListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240007522119AC60043418B /* MovieListModuleProtocols.swift */; };
+		0240007822119AEC0043418B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240007722119AEC0043418B /* Movie.swift */; };
+		0240007A22119F310043418B /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240007922119F310043418B /* MoviesTableViewController.swift */; };
+		0240007C22119F520043418B /* MoviesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240007B22119F520043418B /* MoviesListPresenter.swift */; };
+		0240007E22119F650043418B /* MoviesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240007D22119F650043418B /* MoviesListInteractor.swift */; };
+		0240008022119F7E0043418B /* MoviesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240007F22119F7E0043418B /* MoviesListRouter.swift */; };
+		0240008A2211A02D0043418B /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024000892211A02D0043418B /* DetailRouter.swift */; };
+		0240008C2211A0390043418B /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240008B2211A0390043418B /* DetailInteractor.swift */; };
+		0240008E2211A0460043418B /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240008D2211A0460043418B /* DetailPresenter.swift */; };
+		024000912211A0A00043418B /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024000902211A0A00043418B /* AFWrapper.swift */; };
+		024000952211A99D0043418B /* DetailsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024000942211A99D0043418B /* DetailsModuleProtocols.swift */; };
+		024000982211ADD40043418B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024000972211ADD40043418B /* Main.storyboard */; };
+		025FD6D02212C2A700F73031 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 025FD6CF2212C2A700F73031 /* libsqlite3.tbd */; };
+		025FD6D32212C49D00F73031 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FD6D22212C49D00F73031 /* SQLite.swift */; };
+		57DD56419CEA6A701871939A /* Pods_Movies_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4D2252A19C9529DF4DFE8F /* Pods_Movies_Viper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02400054221199EB0043418B /* Movies_Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies_Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02400057221199EB0043418B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02400059221199EB0043418B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0240005C221199EB0043418B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02400059221199EB0043418B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0240005F221199EB0043418B /* Movies_Viper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movies_Viper.xcdatamodel; sourceTree = "<group>"; };
 		02400061221199F30043418B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02400064221199F30043418B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02400066221199F30043418B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0240007522119AC60043418B /* MovieListModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModuleProtocols.swift; sourceTree = "<group>"; };
+		0240007722119AEC0043418B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0240007922119F310043418B /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		0240007B22119F520043418B /* MoviesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListPresenter.swift; sourceTree = "<group>"; };
+		0240007D22119F650043418B /* MoviesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListInteractor.swift; sourceTree = "<group>"; };
+		0240007F22119F7E0043418B /* MoviesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRouter.swift; sourceTree = "<group>"; };
+		024000892211A02D0043418B /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		0240008B2211A0390043418B /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		0240008D2211A0460043418B /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		024000902211A0A00043418B /* AFWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
+		024000942211A99D0043418B /* DetailsModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleProtocols.swift; sourceTree = "<group>"; };
+		024000972211ADD40043418B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		025FD6CF2212C2A700F73031 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		025FD6D22212C49D00F73031 /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		57DCF502054F1D525864B9E0 /* Pods-Movies_Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies_Viper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movies_Viper/Pods-Movies_Viper.release.xcconfig"; sourceTree = "<group>"; };
+		8EAABB4E975203CC3F04CBBE /* Pods-Movies_Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies_Viper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movies_Viper/Pods-Movies_Viper.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4D2252A19C9529DF4DFE8F /* Pods_Movies_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025FD6D02212C2A700F73031 /* libsqlite3.tbd in Frameworks */,
+				57DD56419CEA6A701871939A /* Pods_Movies_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +74,8 @@
 			children = (
 				02400056221199EB0043418B /* Movies_Viper */,
 				02400055221199EB0043418B /* Products */,
+				918C89A9DBEAD99CDA7477CC /* Pods */,
+				C35E17DAE44059FDB9CE4BC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +90,189 @@
 		02400056221199EB0043418B /* Movies_Viper */ = {
 			isa = PBXGroup;
 			children = (
-				02400057221199EB0043418B /* AppDelegate.swift */,
-				02400059221199EB0043418B /* ViewController.swift */,
-				0240005B221199EB0043418B /* Main.storyboard */,
-				02400061221199F30043418B /* Assets.xcassets */,
-				02400063221199F30043418B /* LaunchScreen.storyboard */,
+				0240006C22119A100043418B /* SupportingFiles */,
+				025FD6D12212C47E00F73031 /* Database Manager */,
+				0240008F2211A07F0043418B /* AlamoFire */,
+				0240006D22119A2D0043418B /* MoviesListModule */,
+				0240008122119F860043418B /* DetailsModule */,
+				024000962211AD6D0043418B /* StoryBoards */,
 				02400066221199F30043418B /* Info.plist */,
-				0240005E221199EB0043418B /* Movies_Viper.xcdatamodeld */,
 			);
 			path = Movies_Viper;
+			sourceTree = "<group>";
+		};
+		0240006C22119A100043418B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				02400061221199F30043418B /* Assets.xcassets */,
+				02400057221199EB0043418B /* AppDelegate.swift */,
+				02400063221199F30043418B /* LaunchScreen.storyboard */,
+				0240005E221199EB0043418B /* Movies_Viper.xcdatamodeld */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0240006D22119A2D0043418B /* MoviesListModule */ = {
+			isa = PBXGroup;
+			children = (
+				0240007422119AAB0043418B /* Protocols */,
+				0240007322119AA30043418B /* Entities */,
+				0240007222119A9B0043418B /* View */,
+				0240007122119A8F0043418B /* Presenter */,
+				0240007022119A810043418B /* Interactor */,
+				0240006F22119A650043418B /* Router */,
+			);
+			path = MoviesListModule;
+			sourceTree = "<group>";
+		};
+		0240006F22119A650043418B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0240007F22119F7E0043418B /* MoviesListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0240007022119A810043418B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0240007D22119F650043418B /* MoviesListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0240007122119A8F0043418B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0240007B22119F520043418B /* MoviesListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0240007222119A9B0043418B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0240007922119F310043418B /* MoviesTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0240007322119AA30043418B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0240007722119AEC0043418B /* Movie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0240007422119AAB0043418B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0240007522119AC60043418B /* MovieListModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0240008122119F860043418B /* DetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				024000882211A0140043418B /* Protocols */,
+				024000872211A0050043418B /* Entities */,
+				0240008622119FFE0043418B /* View */,
+				0240008522119FD70043418B /* Presenter */,
+				0240008422119FD00043418B /* Interactor */,
+				0240008322119FC70043418B /* Router */,
+			);
+			path = DetailsModule;
+			sourceTree = "<group>";
+		};
+		0240008322119FC70043418B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				024000892211A02D0043418B /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0240008422119FD00043418B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0240008B2211A0390043418B /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0240008522119FD70043418B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0240008D2211A0460043418B /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0240008622119FFE0043418B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02400059221199EB0043418B /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		024000872211A0050043418B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		024000882211A0140043418B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				024000942211A99D0043418B /* DetailsModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0240008F2211A07F0043418B /* AlamoFire */ = {
+			isa = PBXGroup;
+			children = (
+				024000902211A0A00043418B /* AFWrapper.swift */,
+			);
+			path = AlamoFire;
+			sourceTree = "<group>";
+		};
+		024000962211AD6D0043418B /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				024000972211ADD40043418B /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		025FD6D12212C47E00F73031 /* Database Manager */ = {
+			isa = PBXGroup;
+			children = (
+				025FD6D22212C49D00F73031 /* SQLite.swift */,
+			);
+			path = "Database Manager";
+			sourceTree = "<group>";
+		};
+		918C89A9DBEAD99CDA7477CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EAABB4E975203CC3F04CBBE /* Pods-Movies_Viper.debug.xcconfig */,
+				57DCF502054F1D525864B9E0 /* Pods-Movies_Viper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C35E17DAE44059FDB9CE4BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				025FD6CF2212C2A700F73031 /* libsqlite3.tbd */,
+				BF4D2252A19C9529DF4DFE8F /* Pods_Movies_Viper.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02400069221199F30043418B /* Build configuration list for PBXNativeTarget "Movies_Viper" */;
 			buildPhases = (
+				E29D22BE6B5BCE7C93298A5E /* [CP] Check Pods Manifest.lock */,
 				02400050221199EB0043418B /* Sources */,
 				02400051221199EB0043418B /* Frameworks */,
 				02400052221199EB0043418B /* Resources */,
+				5C01726B74B161EB7EA8C405 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +335,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024000982211ADD40043418B /* Main.storyboard in Resources */,
 				02400065221199F30043418B /* LaunchScreen.storyboard in Resources */,
 				02400062221199F30043418B /* Assets.xcassets in Resources */,
-				0240005D221199EB0043418B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C01726B74B161EB7EA8C405 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Movies_Viper/Pods-Movies_Viper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movies_Viper/Pods-Movies_Viper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E29D22BE6B5BCE7C93298A5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movies_Viper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02400050221199EB0043418B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0240005A221199EB0043418B /* ViewController.swift in Sources */,
+				024000912211A0A00043418B /* AFWrapper.swift in Sources */,
+				025FD6D32212C49D00F73031 /* SQLite.swift in Sources */,
+				0240008022119F7E0043418B /* MoviesListRouter.swift in Sources */,
+				0240008C2211A0390043418B /* DetailInteractor.swift in Sources */,
+				0240007A22119F310043418B /* MoviesTableViewController.swift in Sources */,
+				0240007622119AC60043418B /* MovieListModuleProtocols.swift in Sources */,
+				0240005A221199EB0043418B /* DetailViewController.swift in Sources */,
+				024000952211A99D0043418B /* DetailsModuleProtocols.swift in Sources */,
+				0240007C22119F520043418B /* MoviesListPresenter.swift in Sources */,
+				0240008A2211A02D0043418B /* DetailRouter.swift in Sources */,
 				02400058221199EB0043418B /* AppDelegate.swift in Sources */,
 				02400060221199EB0043418B /* Movies_Viper.xcdatamodeld in Sources */,
+				0240007822119AEC0043418B /* Movie.swift in Sources */,
+				0240007E22119F650043418B /* MoviesListInteractor.swift in Sources */,
+				0240008E2211A0460043418B /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0240005B221199EB0043418B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0240005C221199EB0043418B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		02400063221199F30043418B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +549,7 @@
 		};
 		0240006A221199F30043418B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EAABB4E975203CC3F04CBBE /* Pods-Movies_Viper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +567,7 @@
 		};
 		0240006B221199F30043418B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57DCF502054F1D525864B9E0 /* Pods-Movies_Viper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
